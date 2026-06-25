@@ -15,7 +15,7 @@ async function fetchData() {
     "http://4.224.186.213/evaluation-service/notifications",
     {
       headers: {
-        Authorization: "Bearer YOUR_TOKEN_HERE" // <-- replace this
+        Authorization: "Bearer YOUR_TOKEN_HERE"
       }
     }
   );
