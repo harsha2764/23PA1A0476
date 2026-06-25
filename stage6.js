@@ -12,8 +12,14 @@ function getTime(t) {
 
 async function fetchData() {
   const res = await axios.get(
-    "http://4.224.186.213/evaluation-service/notifications"
+    "http://4.224.186.213/evaluation-service/notifications",
+    {
+      headers: {
+        Authorization: "Bearer YOUR_TOKEN_HERE" // <-- replace this
+      }
+    }
   );
+
   return res.data.notifications;
 }
 
